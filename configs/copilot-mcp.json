@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "my-budget-control": {
+      "type": "http",
+      "url": "https://cenulinq.com/mcp"
+    }
+  }
+}

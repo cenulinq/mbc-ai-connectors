@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "my-budget-control": {
+      "type": "streamable-http",
+      "url": "https://cenulinq.com/mcp"
+    }
+  }
+}

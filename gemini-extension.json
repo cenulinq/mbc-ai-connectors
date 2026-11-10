@@ -1,0 +1,23 @@
+{
+  "name": "my-budget-control",
+  "version": "1.0.0",
+  "description": "Read your MBC monthly budget totals and prepare expenses for your separate confirmation. No bank payments.",
+  "mcpServers": {
+    "my-budget-control": {
+      "httpUrl": "https://cenulinq.com/mcp",
+      "oauth": {
+        "enabled": true,
+        "scopes": [
+          "mbc.read",
+          "mbc.expense.create"
+        ]
+      },
+      "includeTools": [
+        "get_budget",
+        "prepare_expense",
+        "expense_status"
+      ]
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "my-budget-control",
+  "version": "1.0.0",
+  "description": "Read your MBC monthly budget totals and prepare expenses for your separate confirmation. No bank payments.",
+  "author": {
+    "name": "Cenulinq",
+    "email": "info@cenulinq.com",
+    "url": "https://cenulinq.com/"
+  },
+  "homepage": "https://cenulinq.com/mbc-ai/",
+  "repository": "https://github.com/cenulinq/mbc-ai-connectors",
+  "license": "MIT",
+  "keywords": [
+    "budget",
+    "personal-finance",
+    "mbc",
+    "mcp",
+    "oauth"
+  ],
+  "extensions": {
+    "com.cursor": {
+      "logo": "assets/mbc-app-icon-1024.png"
+    }
+  }
+}
