@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "my-budget-control",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read your MBC monthly budget totals and prepare expenses for your separate confirmation. No bank payments.",
   "author": {
     "name": "Cenulinq",

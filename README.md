@@ -36,7 +36,11 @@ VS Code uses a different `servers` format (configs/vscode-mcp.json); the CLI use
 
 Perplexity: the free account imported the skill but skipped the MCP server (zero connectors). The owner declined a paid upgrade; actual MBC account access remains unverified.
 
-Grok: custom connector creation was available on the signed-in free account, but actual MBC OAuth did not complete. A stricter auth-first URL also returned a connection error. A Grok Connected badge alone is not proof of MBC account access. Grok support remains unverified; do not enter a shared token as a workaround.
+### Grok
+
+In Grok, open Settings → Connect Apps → Add a custom connector. Set the name to My Budget Control and the server URL to `https://cenulinq.com/mcp?auth=required`. Leave custom headers blank. This auth-first URL uses the same MBC account service and scopes as the canonical endpoint; it prompts Grok to complete OAuth during setup. Approve your own MBC account connection on cenulinq.com. A generic Connected badge alone is not account-access proof.
+
+Actual Grok Free OAuth, budget reading, two identical expense-proposal calls and status checking passed with the fixed fictitious account. Both calls returned the same pending draft; no budget entry was added. The exact observed Grok callback is permitted; callback lookalikes, changed paths, query strings and fragments remain refused. This is a custom connector, not a public Grok catalogue listing.
 
 A compatible client needs Streamable HTTP, OAuth discovery, dynamic client registration, S256 PKCE, a resource indicator and a supported exact callback. Client support is not equivalent to an official marketplace listing. Hosted clients need an individually verified callback; unsupported callbacks fail closed.
 
@@ -50,9 +54,9 @@ Use the locale and currency of your account. The confirmation UI supports the 15
 
 ## Publication and tests
 
-The remote server is listed in the public MCP Registry as `com.cenulinq/my-budget-control@1.0.0`. Claude has approved and published its community listing; catalogue propagation is separate. Other marketplace approvals are reported only after their own readback.
+The remote server is listed in the public MCP Registry as `com.cenulinq/my-budget-control@1.0.0`. Claude has approved and published its community listing, and the public catalogue entry has been visually confirmed. Other marketplace approvals are reported only after their own readback.
 
-The server has passed 428 isolated/static security and compatibility checks and 4 live anonymous protocol checks. Actual Claude, Gemini CLI and GitHub Copilot CLI OAuth, budget reading, expense preparation and status were verified with a fictitious account. Gemini and Copilot retries returned the same pending draft without adding a budget entry. The optional auth-first MCP discovery mode retains the same account authentication and canonical resource. This does not claim every client has been tested or publicly listed. No customer records or credentials are included in this repository.
+The server has passed 461 isolated/static security and compatibility checks and 4 live anonymous protocol checks. Actual Claude, Gemini CLI, GitHub Copilot CLI and Grok OAuth, budget reading, expense preparation and status were verified with a fictitious account. Gemini, Copilot and Grok retries returned the same pending draft without adding a budget entry. The optional auth-first MCP discovery mode retains the same account authentication and canonical resource. This does not claim every client has been tested or publicly listed. No customer records or credentials are included in this repository.
 
 ## Help
 
