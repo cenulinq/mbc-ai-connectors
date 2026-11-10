@@ -2,7 +2,12 @@
   "mcpServers": {
     "my-budget-control": {
       "type": "http",
-      "url": "https://cenulinq.com/mcp"
+      "url": "https://cenulinq.com/mcp",
+      "tools": [
+        "get_budget",
+        "prepare_expense",
+        "expense_status"
+      ]
     }
   }
 }

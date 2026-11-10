@@ -18,7 +18,9 @@ Native clients use a strict localhost callback. A localhost callback does not ve
 
 `gemini extensions install https://github.com/cenulinq/mbc-ai-connectors`
 
-Authenticate the my-budget-control MCP server through the normal /mcp auth flow when requested. This extension is for Gemini CLI, not a claim that MBC is listed in the consumer Gemini app.
+Authenticate the my-budget-control MCP server through `/mcp auth my-budget-control`. Keep tool approvals enabled. Gemini CLI 0.67.0 completed real OAuth, monthly budget reading, an identical proposal retry and status checking with the fixed fictitious MBC account. The proposal remained pending and the budget stayed unchanged. This is Gemini CLI, not a listing in the consumer Gemini app.
+
+The test used Google AI Studio free-tier API access with billing disabled and an available Flash-Lite model. Google Code Assist individual sign-in was refused by Google for this CLI; it is not a demonstrated route. Your Google eligibility, model availability and quotas can differ. Configure your own API key privately through the official Gemini CLI instructions; never add it to this repository, chat, or MBC configuration. No shared MBC key is needed.
 
 ### Cursor
 
@@ -26,9 +28,15 @@ Install this repository as a local/custom plugin using Cursor’s documented plu
 
 ### VS Code / GitHub Copilot
 
-Add an HTTP MCP server with URL https://cenulinq.com/mcp. The VS Code format uses `servers` (see configs/vscode-mcp.json); the portable Copilot format uses `mcpServers` (see configs/copilot-mcp.json). Review your installation scope and authentication prompts. Do not replace an existing configuration file wholesale.
+GitHub Copilot CLI 1.0.108 completed actual OAuth, monthly reading, a repeated expense proposal and status checking on Copilot Free. The same pending proposal was returned twice and no budget entry was added. Use `/mcp add`, HTTP URL https://cenulinq.com/mcp and the three explicit tools in configs/copilot-mcp.json. Keep individual tool approvals enabled. Sign in to your own eligible GitHub Copilot account and then approve the separate MBC account connection.
+
+VS Code uses a different `servers` format (configs/vscode-mcp.json); the CLI uses `mcpServers` with an explicit `tools` list (configs/copilot-mcp.json). Merge only the server entry into an existing configuration. The tested client is GitHub Copilot CLI: no claim of consumer Copilot, Microsoft 365 Copilot, VS Code OAuth testing or Microsoft agent-directory publication.
 
 ### Other remote MCP clients
+
+Perplexity: the free account imported the skill but skipped the MCP server (zero connectors). The owner declined a paid upgrade; actual MBC account access remains unverified.
+
+Grok: custom connector creation was available on the signed-in free account, but actual MBC OAuth did not complete. A stricter auth-first URL also returned a connection error. A Grok Connected badge alone is not proof of MBC account access. Grok support remains unverified; do not enter a shared token as a workaround.
 
 A compatible client needs Streamable HTTP, OAuth discovery, dynamic client registration, S256 PKCE, a resource indicator and a supported exact callback. Client support is not equivalent to an official marketplace listing. Hosted clients need an individually verified callback; unsupported callbacks fail closed.
 
@@ -44,7 +52,7 @@ Use the locale and currency of your account. The confirmation UI supports the 15
 
 The remote server is listed in the public MCP Registry as `com.cenulinq/my-budget-control@1.0.0`. Claude has approved and published its community listing; catalogue propagation is separate. Other marketplace approvals are reported only after their own readback.
 
-The server has passed 374 isolated/static security and compatibility checks and 4 live anonymous protocol checks. Actual Claude OAuth, budget read, one proposal and status pending were verified with a fictitious account. This does not claim every client has been tested end to end. No customer records or credentials are included in this repository.
+The server has passed 428 isolated/static security and compatibility checks and 4 live anonymous protocol checks. Actual Claude, Gemini CLI and GitHub Copilot CLI OAuth, budget reading, expense preparation and status were verified with a fictitious account. Gemini and Copilot retries returned the same pending draft without adding a budget entry. The optional auth-first MCP discovery mode retains the same account authentication and canonical resource. This does not claim every client has been tested or publicly listed. No customer records or credentials are included in this repository.
 
 ## Help
 
