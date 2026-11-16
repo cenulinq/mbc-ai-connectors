@@ -14,6 +14,12 @@ Native clients use a strict localhost callback. A localhost callback does not ve
 
 ## Install
 
+### ChatGPT
+
+[Open My Budget Control in the ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6af05eb7b6d4819185517dd83c28be38). Version **1.0.1**, published on **16 November 2026**, is by **Cenulinq** and uses the current blue/green MBC logo. Follow ChatGPT’s add/connect flow, then authorise your own confirmed MBC account on cenulinq.com. The existing 15-minute access and separate MBC confirmation for each expense remain in force.
+
+The published detail page was checked after publication. Installation from a separate customer account and availability in every country, plan or directory search result have not been independently verified.
+
 ### Gemini CLI
 
 `gemini extensions install https://github.com/cenulinq/mbc-ai-connectors`
