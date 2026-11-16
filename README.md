@@ -18,7 +18,9 @@ Native clients use a strict localhost callback. A localhost callback does not ve
 
 [Open My Budget Control in the ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6af05eb7b6d4819185517dd83c28be38). Version **1.0.1**, published on **16 November 2026**, is by **Cenulinq** and uses the current blue/green MBC logo. Follow ChatGPT’s add/connect flow, then authorise your own confirmed MBC account on cenulinq.com. The existing 15-minute access and separate MBC confirmation for each expense remain in force.
 
-The published detail page and the public directory search for **My Budget Control** were checked after publication; the result shows **Cenulinq** as developer. Installation from a separate customer account and availability in every country, plan or directory search result have not been independently verified.
+On **16 November 2026**, a newly created, separate personal **ChatGPT Free** account found **My Budget Control** by **Cenulinq** in the public directory, installed version **1.0.1**, completed MBC OAuth with the fixed fictitious test account and read its November 2026 budget. Recorded income, recorded expenses, planned expenses and remaining amount matched the MBC website. No paid ChatGPT subscription or payment method was required. Use ChatGPT → Plugins → search **My Budget Control** → choose **Cenulinq** → install/connect → sign in to your own MBC account and approve → try the budget starter.
+
+This verifies discovery, installation, connection and monthly reading for one separate Free account in the tested environment. Expense preparation/booking was not repeated in this Free test. Availability in every country, other account types and future Free quotas have not been independently verified. The existing MBC trial/subscription conditions still apply; ChatGPT Free does not grant free MBC subscription access.
 
 ### Gemini CLI
 
