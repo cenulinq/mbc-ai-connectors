@@ -24,6 +24,8 @@ This verifies discovery, installation, connection and monthly reading for one se
 
 This does not verify every country, other account types, future Free quotas, every error condition or all 15 languages. The existing MBC trial/subscription conditions still apply; ChatGPT Free does not grant free MBC subscription access.
 
+**Ordinary-chat discovery limitation (16 November 2026):** the public directory exact-name search found My Budget Control by Cenulinq in the separate Free test account, and `@My Budget Control` showed and selected the installed plugin. An ordinary new chat asking where to find the official plugin incorrectly said it could not find the listing. This was tested in an already-installed Free account; the UK Free-browser report has not been independently reproduced in the UK. OpenAI Support has confirmed escalation to a specialist; an index fix, GB/Free eligibility confirmation and resolution time are not yet confirmed. Use the official directory link above or the [official ChatGPT connection guide](https://cenulinq.com/mbc/chatgpt/). The guide, general AI guide and sitemap were corrected live on 16 November; this does not guarantee immediate chat-answer/index changes.
+
 ### Gemini CLI
 
 `gemini extensions install https://github.com/cenulinq/mbc-ai-connectors`
